@@ -2,10 +2,11 @@ import React from "react";
 
 import { createStackNavigator } from '@react-navigation/stack'
 
-import Home from "../Screens/LoginHomes";
+import Home from "../Screens/Homes/Home";
 import Login from "../Screens/LoginHomes/login";
 import Register from "../Screens/LoginHomes/register";
 import PrincipalHome from "../Screens/LoginHomes/PrincipalHome";
+import Categorias from "../Screens/Homes/adcCat";
 
 const Stack = createStackNavigator();
 
@@ -32,8 +33,11 @@ export default function Routes() {
         component={PrincipalHome}
         options={{headerShown:false}}
         />
-        
-          
+        <Stack.Screen
+        name="AdicionarCategorias"
+        component={Categorias}
+        options={{headerShown:false}}
+        />
       </Stack.Navigator>
   )
 }

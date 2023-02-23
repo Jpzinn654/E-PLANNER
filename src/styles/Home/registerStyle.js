@@ -106,7 +106,11 @@ const registerStyle = StyleSheet.create({
         color: '#000',
         top: 40,
     },
+    touchArea: {
+        width: '100%',
+    },
     btn: {
+        top: '30%',
         width: 180,
         height: 40,
         justifyContent: 'center',

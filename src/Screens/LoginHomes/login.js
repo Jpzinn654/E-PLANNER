@@ -75,7 +75,9 @@ export default function Login({ navigation }) {
                     <Text style={loginStyle.touchText}>Eu não tenho uma conta</Text>
                 </TouchableOpacity>
                
-                    <TouchableOpacity style={loginStyle.btn}>
+                    <TouchableOpacity 
+                    onPress={() => navigation.navigate('Home')}
+                    style={loginStyle.btn}>
                         <Text style={loginStyle.btnText}>Continuar</Text>
                     </TouchableOpacity>
 

@@ -32,11 +32,13 @@ const stylesPrincipal = StyleSheet.create({
     texto3: {
         paddingTop: 5,
         fontWeight: "500",
-        width: 360,
+        width: 340,
         fontSize: 16,
+        textAlign: 'center',
         color: '#000',
     },
     btn: {
+        top: '2%',
         width: 180,
         height: 40,
         justifyContent: 'center',
@@ -45,27 +47,17 @@ const stylesPrincipal = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: '#354458',
     },
-    btn2: {
-        marginTop: 20,
-        width: 180,
-        height: 40,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderWidth: 1.5,
-        borderRadius: 10,
-        borderColor: '#fff',
-    },
     btnText: {
         fontSize: 18,
         color: '#fff',
     },
     logoImage: {
-        top: 20,
+        top: '4%',
     },
     image: {
-        top: 20,
-        width: 380,
-        height: 380,
+        top: '2%',
+        width: 360,
+        height: 360,
     },
 })
 

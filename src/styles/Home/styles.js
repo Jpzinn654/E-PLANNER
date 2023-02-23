@@ -5,7 +5,7 @@ const estiloIndex = StyleSheet.create({
         flexDirection: "row",
         flex: 1,
         backgroundColor: '#2C3C51',
-        color: '#2C3C51'
+        color: '#2C3C51',
     },
     texto1: {
         marginTop: 30,
