@@ -47,7 +47,7 @@ export default function Register({ navigation }) {
 
                 
                 <KeyboardAvoidingView
-                
+                behavior={Platform.OS == "ios" ? 'padding' : 'height'}
                 >
                     <KeyboardAvoidingView
                         behavior={Platform.OS == "ios" ? 'padding' : 'height'}

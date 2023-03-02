@@ -73,14 +73,15 @@ export default function Home({ navigation }) {
             >
                 <Image
                     style={homeStyle.barra1}
-                    source={require('../../assets/barra1.png')}
+                    source={require('../../assets/barra2.png')}
                 />
+
                 <Image
                     style={homeStyle.barra2}
                     source={require('../../assets/barra2.png')}
                 />
             </View>
-            
+
             <View
                 style={homeStyle.renda1} >
                 <Text
@@ -97,17 +98,30 @@ export default function Home({ navigation }) {
                 style={homeStyle.container4}
             >
                 <TouchableOpacity>
-                    <Image
-                    style={homeStyle.card1}
-                    source={require('../../assets/card1.png')}
-                    />
+                    <View style={homeStyle.card1}>
+                        <View style={homeStyle.circle}>
+                            <Image
+                                source={require('../../assets/dollarIcon.png')}
+                            />
+                        </View>
+                        <View>
+                            <Text>ADICIONAR GASTO</Text>
+                        </View>
+                    </View>
                 </TouchableOpacity>
 
                 <TouchableOpacity>
-                    <Image
-                    style={homeStyle.card2}
-                    source={require('../../assets/card2.png')}
-                    />
+                <View style={homeStyle.card2}>
+                        <View style={homeStyle.circle}>
+                            <Image
+                                source={require('../../assets/calendarIcon.png')}
+                            />
+                        </View>
+                        <View>
+                            <Text
+                            >AGENDAR GASTO</Text>
+                        </View>
+                    </View>
                 </TouchableOpacity>
             </View>
 
@@ -122,9 +136,9 @@ export default function Home({ navigation }) {
                     homeStyle.subTxt
                 }>Você ainda não adicionou nenhuma categoria, deseja adicionar?</Text>
 
-                <TouchableOpacity 
-                onPress={() => navigation.navigate('AdicionarCategorias')}
-                style={homeStyle.btnCat}
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('AdicionarCategorias')}
+                    style={homeStyle.btnCat}
                 >
                     <Text style={
                         homeStyle.btnTxt

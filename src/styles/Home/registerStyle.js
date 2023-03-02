@@ -110,7 +110,7 @@ const registerStyle = StyleSheet.create({
         width: '100%',
     },
     btn: {
-        top: '30%',
+        top: '5%',
         width: 180,
         height: 40,
         justifyContent: 'center',
