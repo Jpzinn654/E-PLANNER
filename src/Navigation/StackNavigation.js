@@ -7,12 +7,14 @@ import Login from "../Screens/LoginHomes/login";
 import Register from "../Screens/LoginHomes/register";
 import PrincipalHome from "../Screens/LoginHomes/PrincipalHome";
 import Categorias from "../Screens/Homes/adcCat";
+import definifirRendaStyle from "../styles/HomeStyle/definirRendaStyle";
+import DefinirRenda from "../Screens/Homes/definirRenda";
 
 const Stack = createStackNavigator();
 
 export default function Routes() {
   return (
-      <Stack.Navigator initialRouteName="PrincipalHome">
+      <Stack.Navigator initialRouteName="DefinirRenda">
         <Stack.Screen
           name="Home"
           component={Home}
@@ -26,6 +28,11 @@ export default function Routes() {
         <Stack.Screen
         name="Register"
         component={Register}
+        options={{headerShown:false}}
+        />
+         <Stack.Screen
+        name="DefinirRenda"
+        component={DefinirRenda}
         options={{headerShown:false}}
         />
         <Stack.Screen

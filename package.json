@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/slider": "4.2.4",
     "@react-navigation/drawer": "^6.6.1",
     "@react-navigation/native": "^6.1.5",
     "@react-navigation/native-stack": "^6.9.8",
